@@ -8,9 +8,9 @@
 This script is meant to solve the issue: it will download a whole novel from the website as a text file and convert it to the epub format.
 
 
-###############
-# Requirement #
-###############
+################
+# Requirements #
+################
 
 Tested on Linux, but it should also work on Mac OS. For Windows, please install and use a Windows Subsystem for Linux (or equivalent)
 
@@ -31,7 +31,7 @@ where: <book_id> is the id of the book in the main page url
 For exemple, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn/), simply run:
   ./yomou2ebook.sh n6316bn
 
-A output.txt file will be created, then converted into a output.epub file 
+An output.txt file will be created, then converted into an output.epub file 
 
 
 ###############
@@ -39,7 +39,7 @@ A output.txt file will be created, then converted into a output.epub file
 ###############
 
 Not supported (yet):
-- images
+- image
 - furigana 
 
 

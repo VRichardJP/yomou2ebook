@@ -37,9 +37,9 @@ mkdir $TMP_DIR
 wget -q $MAIN_URL -O $TMP_DIR/$NOVEL_ID.html
 sleep $SLEEP_TIME
 NOVEL_TITLE=`pcregrep -Mo '(?s)<p class=\"novel_title\">.*?</p>' $TMP_DIR/$NOVEL_ID.html | sed -E 's/<[^>]*>//g'`
-WRITER_NAME=`pcregrep -Mo '(?s)<div class=\"novel_writername\">.*?</div>' $TMP_DIR/$NOVEL_ID.html | grep -P '<a .*?>.*?</a>' | sed -E 's/<[^>]*>//g'`
+WRITER_NAME=`pcregrep -Mo '(?s)<div class=\"novel_writername\">.*?</div>' $TMP_DIR/$NOVEL_ID.html | grep -Po '<a .*?>.*?</a>' | sed -E 's/<[^>]*>//g'`
 NOVEL_SUMMARY=`pcregrep -Mo '(?s)<div id=\"novel_ex\">.*?</div>' $TMP_DIR/$NOVEL_ID.html | sed -E 's/<[^>]*>//g'`
-CHAPTER_LIST=`pcregrep -Mo '(?s)<dd class=\"subtitle\">.*?</dd>' $TMP_DIR/$NOVEL_ID.html | grep -P 'href=\".*?\"' | sed -E 's/^.*href=\"(.*?)\".*$/\1/g' | cut -d'/' -f3`
+CHAPTER_LIST=`pcregrep -Mo '(?s)<dd class=\"subtitle\">.*?</dd>' $TMP_DIR/$NOVEL_ID.html | grep -Po 'href=\".*?\"' | sed -E 's/^.*href=\"(.*?)\".*$/\1/g' | cut -d'/' -f3`
 
 echo "Found the following novel:"
 echo "Title: $NOVEL_TITLE"
