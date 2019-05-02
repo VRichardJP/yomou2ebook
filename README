@@ -23,13 +23,13 @@ Extra requirements:
 ##############
 
 Usage is as follow:
-  ./yomou2ebook.sh <book_id>
+  ./yomou2ebook.sh <main_url>
 
-where: <book_id> is the id of the book in the main page url
-                 for example: the id of http://ncode.syosetu.com/n6316bn/ is n6316bn
+where: <main_url> is the url of the main page of the book
+                 for example: http://ncode.syosetu.com/n6316bn
 
-For exemple, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn/), simply run:
-  ./yomou2ebook.sh n6316bn
+For exemple, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn), simply run:
+  ./yomou2ebook.sh http://ncode.syosetu.com/n6316bn
 
 An output.txt file will be created, then converted into an output.epub file 
 
@@ -39,7 +39,6 @@ An output.txt file will be created, then converted into an output.epub file
 ###############
 
 Not supported (yet):
-- image
 - furigana 
 
 
@@ -48,3 +47,10 @@ Not supported (yet):
 ################
 
 I only tested this script on a few novels. I cannot garantee it will work on all of them. Also, the script may stop working overnight if the website gets an update. If you have any trouble feel free to open a new issue.
+
+
+####################
+# Similar projects #
+####################
+
+- https://github.com/whiteleaf7/narou
