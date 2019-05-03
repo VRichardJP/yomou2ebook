@@ -14,13 +14,16 @@ Extra requirements:
 
 ## How to use
 Usage is as follow:
-  ./yomou2ebook.sh <main_url>
-
-where: <main_url> is the url of the main page of the book
+```bash
+./yomou2ebook.sh <main_url>
+```
+where: `<main_url>` is the url of the main page of the book
                  for example: http://ncode.syosetu.com/n6316bn
 
 For exemple, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn), simply run:
-  ./yomou2ebook.sh http://ncode.syosetu.com/n6316bn
+```bash
+./yomou2ebook.sh http://ncode.syosetu.com/n6316bn
+```
 
 An output.txt file will be created, then converted into an output.epub file 
 ![example](https://raw.githubusercontent.com/vingtfranc/yomou2ebook/master/example.png)
