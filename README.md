@@ -17,10 +17,10 @@ Usage is as follow:
 ```bash
 ./yomou2ebook.sh <main_url>
 ```
-where: `<main_url>` is the url of the main page of the book
+where: `<main_url>` is the url of the main page of the book,
                  for example: http://ncode.syosetu.com/n6316bn
 
-For exemple, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn), simply run:
+For example, to download 転生したらスライムだった件 (http://ncode.syosetu.com/n6316bn), simply run:
 ```bash
 ./yomou2ebook.sh http://ncode.syosetu.com/n6316bn
 ```
